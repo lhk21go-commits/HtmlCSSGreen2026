@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 연습</title>
+    <!-- <style>은 아래 HTML 태그들을 이쁘게 꾸며주는 태그이다. -->
+     <style>
+        body {
+            font-size: 14px;
+        }
+        table{
+            width: 800px;
+            border-collapse: collapse;
+        }
+        table td,
+        table th{
+            text-align: center;
+            padding: 5px;
+            border: 1px solid lightgray;
+        }
+        table th{
+            /* th부분에 배경색을 지정하는 CSS*/
+            background-color: dodgerblue;
+            /* 글꼴색을 지정하는 CSS*/
+            color: #fff;
+        }
+        caption{
+            text-align: right;
+            /*텍스트의 바깥쪽 여백을 지정하는 CSS*/
+            /*margin:5px(위, 아래, 좌, 우 바깥쪽 여백을 지정하는 CSS*/
+            /*margin-bottom:10px(아래쪽만 여백 지정*/
+            margin-bottom: 10px;
+        }
+
+    
+
+
+    </style>   
+</head>
+<body>
+
+<!-- 테이블 작성시 웹표준과 웹접근성을 고려하여
+    <thead>,<tbody>,<tfoot> 태그를 이용하여 작성함을 원칙으로 한다.
+-->
+
+<table>
+    <caption>부가세(VAT)가 포함된 실제 지불금액입니다.</caption>
+    <!-- thead 부분으로 필드명 기재 -->
+     <thead>
+        <tr>
+            <th>상품명</th>
+            <th>월정액</th>
+            <th>제공혜택</th>
+        </tr>
+        <tr>
+            <th>지상파 무제한 즐기기</th>
+            <th>14,300원</th>
+            <th>지상파 3사의 드라마, 예능 프로그램을 가장 빠르게 가장 경제적 서비스</th>
+        </tr>
+        <tr>
+            <th>CJENM 무제한 즐기기</th>
+            <th>14,300원</th>
+            <th>모든 드라마, 예능 프로그램을 무제한 볼수 있는 인기 월정액 서비스</th>
+        </tr>
+        <tr>
+            <th>JTPC 무제한 즐기기</th>
+            <th>7,700원</th>
+            <th>JTBC 드라마, 예능 프로그램을 무제한 볼수 있는 인기 월정액 서비스</th>
+        </tr>
+
+     </thead>
+
+
+</table>
+
+<!-- 병합 테이블 -->
+ <hr>
+ <table>
+    <thead>
+        <tr>
+            <th colspan="4">기온 </th>
+        </tr>
+        <tr>
+            <th>월</th>
+            <th>높음</th>
+            <th>낮음</th>
+            <th>평균</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1월</td>
+            <td>48</td>
+            <td>36</td>
+            <td>43</td>
+        </tr>
+         <tr>
+            <td>2월</td>
+            <td>55</td>
+            <td>34</td>
+            <td rowspan="2">40</td>
+        </tr>
+         <tr>
+            <td>3월</td>
+            <td>44</td>
+            <td>22</td>
+        </tr>
+         <tr>
+            <td>4월</td>
+            <td>52</td>
+            <td>46</td>
+            <td>44</td>
+        </tr>
+    </tbody>
+
+
+ </table>
+
+    
+</body>
+</html>
