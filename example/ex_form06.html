@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 태그 연습문제2</title>
+    <style>
+       *{
+            padding: 0;
+            margin: 0;
+       }
+       body{
+            font-family: sans-serif;
+          
+
+       }
+        form{
+            font-size: 13px;
+            width: 850px;
+            padding: 15px 20px;
+            margin: 0px auto;
+            border: 1px solid #cfc9c9;
+            border-radius: 8px;
+            background-color: beige;
+        }
+        h1, p {
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            margin-bottom: 15px;
+        }
+        .title, .title2{
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+        .title2{
+            vertical-align: top;
+        }
+        input[text],
+        input[type='text'], 
+        input[type='email'], 
+        input[type='password'], 
+        select{
+            width: 150px;
+            padding: 6px 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        select{
+            font-size: 11px;
+        }
+        .mobile1{
+            width: 80px;
+          
+            
+        }
+        .mobile2{
+            width: 100px;
+        }
+        input[type='text2']{
+            width: 100px;
+            padding: 6px 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .btn{
+            text-align: center;
+        }
+        .btn button[type='submit'],
+        .btn button[type='reset']{
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 15;
+            cursor: pointer;
+            
+        }
+        .btn button[type='submit']{
+            background-color: #4caf50;
+            color: white;
+        }
+        .btn button[type='reset']{
+            background-color: #f44336;
+            color: white;
+        }
+        .btn button[type='submit']:hover{
+            background-color: #37e607;
+        }
+        .btn button[type='reset']:hover{
+            background-color: #f40000;
+        }
+
+    </style>
+</head>
+<body>
+    <br/>
+    <h1>Sing up</h1><br/>
+    <p>
+        Become a member of Andrew's Company, and enjoy a variety of benefits.
+    </p>
+    <form action="#" method="get">
+            <ul>
+                <li>
+                    <label class="title">Name</label>
+                    <input type="text" placeholder="Name"/>
+                </li>
+                <li>
+                    <label class="title">ID</label>
+                    <input type="text" placeholder="ID"/>
+                </li>
+                <li>
+                    <label class="title">Password</label>
+                    <input type="password" placeholder="password"/>
+                </li>
+                <li>
+                    <label class="title">ConfirmPassword</label>
+                    <input type="password" placeholder="ConfirmPassword"/>
+                </li>
+                <li>
+                    <label class="title">Mobile</label>
+                    <select class="mobile1">
+                        <option value="010" selected>010</option>
+                    </select>
+                    <input type="text2" placeholder="middle-phonenumber"/> -
+                    <input type="text2" placeholder="last-phonenumber"/>
+                </li>
+                <li>
+                    <label class="title">E-mail</label>
+                    <input type="text" placeholder="email-address"/>@
+                    <input type="text" placeholder="email-company"/>
+                    <select class="mobile2">
+                        <option value="Direct input" selected>Direct input</option>
+                        <option value="naver.com" >naver.com</option>
+                        <option value="daum.net" >daum.net</option>
+                        <option value="gmail.com" >gmail.com</option>
+                    </select>
+                </li>
+                <li>
+                    <label class="title">Whether to receive email</label>
+                    <input type="checkbox" name="check" />
+                    <label >Acceptance</label>
+                </li>
+                <li>
+                    <label class="title">Interest</label>
+                    <input type="checkbox" name="interest" id="in1" />
+                    <label for="in1">Movie</label>
+                    <input type="checkbox" name="interest" id="in2" />
+                    <label for="in2">Theater</label>
+                    <input type="checkbox" name="interest" id="in3" />
+                    <label for="in3">Travel</label>
+                    <input type="checkbox" name="interest" id="in4" />
+                    <label for="in4">Mountain climbing</label>
+                    <input type="checkbox" name="interest" id="in5" />
+                    <label for="in5">Visting a restaurant</label>
+                    <input type="checkbox" name="interest" id="in6" />
+                    <label for="in6">volunteer</label>
+                    <input type="checkbox" name="interest" id="in7" />
+                    <label for="in7">Etc</label>
+                </li>
+                <li>
+                    <label class="title">Gender</label>
+                    <input type="radio" name="gender" id="gn1" />
+                    <label for="gn1">Male</label>
+                    <input type="radio" name="gender" id="gn2" />
+                    <label for="gn2">Female</label>
+                </li>
+                <li>
+                    <label class="title">Path learned</label>
+                    <select >
+                        <option value="" >Choose</option>
+                        <option value="Internet" >Internet</option>
+                        <option value="Acquaintance introduction" >Acquaintance introduction</option>
+                        <option value="Etc" >Etc</option>
+                    </select>
+                </li>
+                <li>
+                    <label class="title2" >Memo</label>
+                    <textarea cols="40" rows="5" placeholder="Memo"></textarea>
+                </li>
+            </ul>
+            <div class="btn">    
+                <button type="submit">Sign up</button>
+                <button type="reset">Cancel</button>
+            </div>
+
+    </form>
+
+
+    
+</body>
+</html>
