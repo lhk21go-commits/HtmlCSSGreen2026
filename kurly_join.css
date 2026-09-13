@@ -1,0 +1,113 @@
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+  margin: 50px auto;
+  max-width: 640px; 
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333333;
+  margin-bottom: 40px;
+}
+
+/* 필수 표시(*) 보라색 강조 */
+p, label {
+  font-size: 14px;
+}
+
+span[style*="color: purple"], .required-star {
+  color: #5f0080 !important; 
+}
+
+/* 2. 입력 행(Row) 레이아웃 정렬 */
+form > div {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #f4f4f4; 
+}
+
+form > div > label:first-child {
+  width: 140px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+select {
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  border-color: #5f0080;
+}
+
+input[type="text"], input[type="password"] {
+  width: 340px;
+}
+
+input[name="birthYear"],
+input[name="birthMonth"],
+input[name="birthDay"] {
+  width: 100px;
+  text-align: center;
+  display: inline-block;
+}
+
+button[type="button"] {
+  height: 44px;
+  border: 1px solid #5f0080;
+  background-color: #ffffff;
+  color: #5f0080;
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 0 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button[type="button"]:hover {
+  background-color: #f7f7f7;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333333;
+  margin: 30px 0;
+}
+
+.terms-container {
+  display: block;
+}
+
+.terms-container div {
+  padding: 8px 0;
+}
+
+button[type="submit"] {
+  background-color: #5f0080 !important;
+  color: #ffffff !important;
+  border: none;
+  height: 54px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+button[type="submit"]:hover {
+  background-color: #4f006b !important; 
+}
