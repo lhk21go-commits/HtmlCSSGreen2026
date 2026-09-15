@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 연습문제 5</title>
+    <style>
+        /* *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        } */
+
+        body{
+            font-family: sans-serif;
+            background-color: #eee;
+            padding-top: 50px;
+        }
+       
+        .card_container{
+            width: 1300px;
+            margin: 0 auto;
+            text-align: center;
+            
+        }
+        .card_container .card{
+            /* card 가로배치 */
+            display: inline-block;
+            width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px;
+            
+        }
+       .card_container .card img{
+            width: 300px;
+            height: 200px;
+            border-radius: 10px 10px 0 0 ;
+
+        }
+        .card_container .card h2{
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .card_container .card p{
+                font-size: 13px;
+                color: #555;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                
+        }
+    </style>
+
+</head>
+<body>
+    <div class="card_container">
+        <div class="card" >
+            <img src="/images/product1.jpg"  alt="product1">
+            <h2>Wireless Earbus</h2>
+            <p>This is a long product description text that will be truncated</p>
+        </div>
+        <div class="card" >
+            <img src="/images/product2.jpg"  alt="product2">
+            <h2>Smart watch</h2>
+            <p>Track your health and fitness goals easily every single day</p>
+        </div>
+        <div class="card" >
+            <img src="/images/product3.jpg"  alt="product3">
+            <h2>Bluetooth Speaker</h2>
+            <p>Portable speaker with powerful sound and long battery life</p>
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>

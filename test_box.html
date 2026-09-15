@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델</title>
+    <style>
+        body{
+            /* display:flex는 부모에 지정한다. */
+            /* display : flex;
+            justify-content: center; */
+        }
+
+        /* 부모 div */
+        .box_group{
+            width: 800px;
+            height: 800px;
+            background-color: white;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+        /* 공통 CSS */
+        .box_group div{
+            width: 200px;
+            height: 200px;
+            background-color: dodgerblue;
+            border: 2px solid orange;
+            margin: 10px;
+            text-align: center;
+            color: white;
+            /* line-height는 높이의 값과 같이 지정하면 가운데로 문자가 배체된다 */
+            line-height: 200px;
+            /* float: left; */
+            /* div 가로 배치 CSS :float: left: (왼->오), right(오->왼) */
+            /* 요즘은 float 가로배치 하지 않는다. */
+            /* 요금은 display:float*/
+            /* float : left 상태에서 margin : 0 auto는  */
+            /* block => inline-block으로 변경 */
+            /* inline태그는 기본 가로로 배치된다. */
+            display: inline-block;
+        }
+        /* 공통을 제외한 나머지 서로 다른 CSS => 클래스 이름 이용 */
+        .box1{
+            border-radius: 20px;
+        }
+        .box2{
+            border-radius: 50px;
+        }
+        /* 정원 */
+        .box3{
+            border-radius: 50%;
+        }
+        .box4{
+            border-radius: 50px 0 50px 0;
+        }
+        .box5{
+            border-radius: 200 0 0 0 px;
+        }
+        .box6{
+            border-radius: 200px 200px 200px 0;
+        }
+        .box7{
+            border-radius: 200px 0 200px 0;
+        }
+        .box8{
+            border-radius: 100px 100px 0 0 ;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- div 태그는 block이다. blockdms 높이와 너비를 가진다. -->
+    <!-- 그래서 세로로 출력되고, 가로로 배치가 되지 않는다. -->
+        <div class="box_group">
+            <div class="box1">box1</div>
+            <div class="box2">box2</div>
+            <div class="box3">box3</div>
+            <div class="box4">box4</div>
+            <div class="box5">box5</div>
+            <div class="box6">box6</div>
+            <div class="box7">box7</div>
+            <div class="box8">box8</div>
+
+        </div>
+    </div>
+</body>
+</html>
