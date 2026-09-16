@@ -1,0 +1,77 @@
+@charaset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login-wrap{
+    width: 500px;
+    margin: 30px auto;
+}
+
+h1{
+    color: #03c75a;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-box{
+    width: 450px;
+    /* background-color: antiquewhite; */
+    border-radius: 20px;
+    padding:0 20px;
+    text-align: center;
+    /* border: 1px solid rgb(209, 206, 206) */
+      
+}
+
+.inp input[type="text"], .inp input[type="password"]{
+    width: 450px;
+    height: 50px;
+    font-size: 16px;
+    border-bottom: 1px solid red;
+    margin: 10px auto;
+    outline: none;
+    /* border: none; */
+}
+
+.login-check{
+    width: 450px;
+    display: inline-block;
+    /* float: left; */
+    margin: 20px 0;
+    /* border: 1px solid red; */
+}
+.login-check .status{
+    float: left;
+}
+.login-check .ip {
+    float: right;
+}
+.button{
+    width: 450px;
+    height: 50px;
+}
+button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.login{
+    font-size: 18px;
+    color: white;
+}
+
+.login{
+    background-color: #03c75a;
+}
+
+.p{
+    height: 50px;
+    margin: 20px 0;
+    /* border: 1px solid red; */
+
+}
