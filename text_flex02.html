@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 연습</title>
+    <style>
+        /* 부모인 container 공통 CSS=> display : flex */
+        .container{
+            /* 부모요소가 아니라 container의 자식요소를 가로 배치한다. */
+            display: flex;
+            /* row(행) 기본 가로배치 */
+            /* column(열) 기본 세로배치 */
+            flex-direction: row;
+
+            /* 부모의 가로 너비가 자식 요소전체의 너비보다 작을 때 
+                자동 개행 속성을 지정한다.
+                flex-wrap : wrap(줄바꿈), nowrap(줄바꿈 안함)
+
+            */
+
+            width: 500px;
+            height: 400px;
+            flex-wrap: wrap;
+            /* width: 800px; */
+            /* height: 200px; */
+            border: 1px solid blue;
+            /* 자식요소를 부모요소의 가운데로 배치 */
+            /* space-around(마진폭 일정) / speace-between(사이간격 일정) / space-evenly(모든 간격일정) */
+            justify-content: space-evenly;
+        }
+ 
+        .container .box{
+            width: 100px;
+            height: 100px;
+            /* border: 1px solid red; */
+            background-color: crimson;
+            border-radius: 5px;
+            margin: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- display:flex는 반드시 부모 flex 속성을 지정해야 한다. -->
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+    </div>
+
+
+</body>
+</html>

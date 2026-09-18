@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 연습문제01</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+            /* padding: 0; */
+            width: 500px;
+            border: 1px solid red;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        ul li{
+            /* flex: 1; 은 자식에게 사용 가능 */
+            border: 1px solid blue;
+            flex: 1;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
