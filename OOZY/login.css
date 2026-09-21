@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+.container{
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 100px auto;
+}
+h1{
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #14563a;
+    margin: 25px;
+}
+input[type='email'], input[type='password'],
+button{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border:none;
+    border:1px solid lightgray;
+}
+input[type='email']::placeholder, 
+input[type='password']::placeholder{
+    padding-left: 20px;
+}
+button{
+    font-weight: bold;
+    background-color: white;
+    margin: 20px;
+}
+button.login{
+    background-color: #14563a;
+    color: white;
+}
+.sub-menu {
+    width: 300px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.sub-menu .checkbox{
+    margin: 0;
+    border: 1px solid red;
+}
+
+.simple-login{
+    width: 300px;
+    height: 100px;
+    /* background-color: antiquewhite; */
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+span{
+    display: block;
+    text-align: left;
+    margin: 10px 15px 15px 15px;
+}
+.simple-login .imgs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.simple-login .imgs #naver{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(18, 231, 18);
+    border-radius: 50%;
+    /* margin-left: 15px ; */
+}
+.simple-login .imgs #kakao{
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 50%;
+    /* margin-left: 15px ; */
+}
+.simple-login .imgs #facebook{
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    /* margin-left: 15px ; */
+}
+.simple-login .imgs #google{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    /* margin-left: 15px ; */
+}
+.simple-login .imgs #apple{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    /* margin-left: 15px ; */
+}
+.button p{
+    margin-bottom: 15px;
+}

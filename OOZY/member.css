@@ -1,0 +1,137 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 450px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 50px auto;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #14563a;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+h1, h4, p{
+    text-align: center;
+}
+p {
+    font-size: 11px;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin: 50px 20px 5px;
+    font-size: 11px;
+    width: 400px;
+    height: 30px;
+}
+label{
+    display: block;
+    margin: 0;
+}
+span{
+    font-weight: bold;
+    color: red;
+}
+form ul li input[type='password']{
+    margin-bottom: 0;
+}
+form ul li .small{
+    text-align: left;
+}
+fieldset ul li .necessary{
+    color: green;
+}
+form ul .birthday .choice,form ul .gender .choice
+, fieldset ul li .choice{
+    color: black;
+}
+/* 입력창 CSS */
+input{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 35px;
+    margin: 10px 0 10px;
+}
+input[type='password'], input[type='text'], 
+input[type='date'], input[type='email'],
+input[type='phone']{
+    height: 35px;
+}
+input[type='password'], input[type='text'], 
+input[type='date']{
+    width: 400px;
+}
+input[type='email']{
+    width: 301px;
+    margin-right: 5px;
+} 
+form ul li .box button.check{
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: white;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    width: 90px;
+    height: 35px
+}
+input[type='number']{
+    width: 280px;
+    margin-right: 5px;
+}
+form ul li .box button.take{
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: white;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    width: 111px;
+    height: 35px
+}
+form ul .gender .box{
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+form ul li 
+/* 약관 동의 */
+
+
+
+/* 횡단선 */
+hr{
+    margin: 20px 10px;
+    border: 1px solid lightgray;
+}
+/* 하단 버튼 */
+.button{
+
+}
+.button .join, .button .login{
+    width: 400px;
+    height: 35px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px;
+}
+.button .join{
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+    
