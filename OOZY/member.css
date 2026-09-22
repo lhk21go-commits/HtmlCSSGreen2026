@@ -23,25 +23,45 @@ h1{
 h1, h4, p{
     text-align: center;
 }
-p {
+label, p{
     font-size: 11px;
+    /* margin-bottom: 5px; */
+}
+label::placeholder{
+    margin-left: 10px;
+}
+/*  빨간색 * 표시 */
+span{
+    font-weight: bold;
+    color: red;
+}
+/* 녹색 (필수) 표시*/
+fieldset ul li .necessary{
+    color: green;
+}
+/* 검정 (선택) 표시*/
+form ul .birthday .choice,form ul .gender .choice
+, fieldset ul li .choice{
+    color: black;
 }
 ul{
     list-style: none;
 }
 li{
-    margin: 50px 20px 5px;
-    font-size: 11px;
+    margin: 0 20px 0;
+    margin-bottom: 20px;
+}
+li .form{
     width: 400px;
-    height: 30px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 15px; */
+    /* border: 1px solid red; */
 }
-label{
-    display: block;
-    margin: 0;
-}
-span{
-    font-weight: bold;
-    color: red;
+p.info{
+    text-align: left;
 }
 form ul li input[type='password']{
     margin-bottom: 0;
@@ -49,34 +69,28 @@ form ul li input[type='password']{
 form ul li .small{
     text-align: left;
 }
-fieldset ul li .necessary{
-    color: green;
-}
-form ul .birthday .choice,form ul .gender .choice
-, fieldset ul li .choice{
-    color: black;
-}
 /* 입력창 CSS */
 input{
     border: 1px solid lightgray;
     border-radius: 5px;
-    height: 35px;
-    margin: 10px 0 10px;
-}
-input[type='password'], input[type='text'], 
-input[type='date'], input[type='email'],
-input[type='phone']{
     height: 35px;
 }
 input[type='password'], input[type='text'], 
 input[type='date']{
     width: 400px;
 }
+/* 크기 다른 입력창 조정 */
 input[type='email']{
     width: 301px;
     margin-right: 5px;
 } 
-form ul li .box button.check{
+input[type='number']{
+    width: 280px;
+    margin-right: 5px;
+}
+/* 녹색버튼 */
+form ul li .form button.check, 
+form ul li .form button.take{
     border: 2px solid green;
     border-radius: 5px;
     background-color: white;
@@ -86,27 +100,35 @@ form ul li .box button.check{
     width: 90px;
     height: 35px
 }
-input[type='number']{
-    width: 280px;
-    margin-right: 5px;
-}
-form ul li .box button.take{
-    border: 2px solid green;
-    border-radius: 5px;
-    background-color: white;
-    color: green;
-    font-weight: bold;
-    text-align: center;
+form ul li .form button.take{
     width: 111px;
     height: 35px
 }
-form ul .gender .box{
+form ul .gender .form{
     width: 400px;
-    text-align: center;
-    margin: 0 auto;
+    height: 35px;
+}
+form ul .gender .form label{
+    width: 80px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+form ul{
+    /* display: ; */
+}
+fieldset form ul li {
+    display: flex;
+    align-items: center;
+
+
+}
+fieldset form ul li label{
+    width: 500px;
+    height: 35px;
     border: 1px solid red;
 }
-form ul li 
 /* 약관 동의 */
 
 
